@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(31, 31, 116);
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+}
+
+.main .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    margin-bottom: 10%;
+}
+
+.copy {
+    margin: 8%;
+    margin-top: 10%;
+
+}
+
+.box {
+    text-align: center;
+}
+
+
+.box button {
+    border: 2px solid black;
+    border-radius: 50%;
+    background: none;
+}
+
+.box i {
+    font-size: 5rem;
+    color: goldenrod;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.main p {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.js-reset {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+
+.js-result {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+    .review .boxs {
+        margin: 5%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
