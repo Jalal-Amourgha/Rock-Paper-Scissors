@@ -47,20 +47,20 @@ body {
 .main p {
     color: white;
     margin-bottom: 30px;
-    font-size: 18px;
 }
 
 .js-reset {
     border: none;
     background-color: black;
     color: white;
-    padding: 5px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
 .js-result {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
