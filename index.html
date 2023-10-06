@@ -10,50 +10,58 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="copy">
-            <div class="container">
-                <div class="buttons">
-                    <div class="box">
-                        <button onclick="
-                                playerGame('rock');
 
-                                "><i class="fa-solid fa-hand-back-fist"></i></button>
-                    </div>
+    <!--Title-->
+    <div class="title">
+        <h2><span>Rock</span> <span>Paper</span> <span>Scissors</span> Game</h2>
+    </div>
 
-                    <div class="box">
-                        <button onclick="
-                                playerGame('paper');
-
-                                "><i class="fa-solid fa-hand"></i>
-                        </button>
-                    </div>
-
-                    <div class="box">
-                        <button onclick="
-                                playerGame('scissor');
-
-                                "><i class="fa-solid fa-hand-scissors"></i>
-                        </button>
-                    </div>
+    <!--Container-->
+    <div class="first-design">
+        <!--This Is The First Box-->
+        <div class="box-one">
+            <div class="choose">
+                <h1>Choose Your Move</h1>
+            </div>
+            <div class="image-boxs">
+                <div class="image-box">
+                    <img id="rock" src="images/rock.jpg" alt="rock">
                 </div>
-                <p class="js-result"></p>
-                <p class="js-picks"></p>
-                <p class="js-score"></p>
-                <button onclick="
-                                score.wins = 0;
-                                score.ties = 0;
-                                score.losses = 0;
-                                resetScore();
-                            " class="js-reset">Reset score
-                </button>
+                <div class="image-box">
+                    <img id="paper" src="images/paper.jpg" alt="paper-logo">
+                </div>
+                <div class="image-box">
+                    <img id="scissors" src="images/scissors.jpg" alt="scissors-logo">
+                </div>
+            </div>
+        </div>
+
+        <!--This is The Second Box-->
+        <div class="box-two display-none">
+            <div class="display-result">
+                <div>
+                    <h2>You Picked</h2>
+                    <img id="playerImgPicked">
+                </div>
+                <!--Result-->
+                <div class="result-box">
+                    <h1 id="result"></h1>
+                </div>
+                <div>
+                    <h2>Computer Picked</h2>
+                    <img id="computerImgPicked">
+                </div>
+            </div>
+            <!--Scoore-->
+            <div class="score-box">
+                <h2 id="score">Score : Wins = <span id="wins"></span> , Losses = <span id="losses"></span> and Ties
+                    = <span id="ties"></span>
+                </h2>
             </div>
         </div>
     </div>
-
-
-    <script src="js.js"></script>
-    <script src="https://kit.fontawesome.com/97220a04d8.js" crossorigin="anonymous"></script>
 </body>
+<script src="js.js"></script>
+<script src="https://kit.fontawesome.com/97220a04d8.js" crossorigin="anonymous"></script>
 
 </html>
